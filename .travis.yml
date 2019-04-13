@@ -5,8 +5,6 @@ addons:
   apt:
     packages:
       - putty-tools
-before_script:
-  - cd host/scripts
 script:
   - composer update
 after_success: yes|pscp -r -pw buheizseuh ./ a0231165@cometbot.ru:/home/a0231165/domains/cometbot.ru/scripts
