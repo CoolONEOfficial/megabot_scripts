@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ccb8186dbfa7b3b7d9974e8c211b6631",
+    "content-hash": "3b7bd24e0cdbead9fc8a79802644138b",
     "packages": [
         {
             "name": "ddeboer/imap",
@@ -167,6 +167,9 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "ext-mysqli": "*",
+        "ext-json": "*"
+    },
     "platform-dev": []
 }

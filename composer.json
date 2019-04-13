@@ -3,7 +3,6 @@
         "php-imap/php-imap": "^3.0",
         "sergeytsalkov/meekrodb": "*",
         "ddeboer/imap": "^1.7",
-        "ext-mysql": "*",
         "ext-mysqli": "*",
         "ext-json": "*"
     }
