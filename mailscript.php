@@ -51,4 +51,4 @@ foreach ($messages as $message) {
 
 $connection->expunge();
 
-exec('~/anaconda/bin/python3 ~/domains/cometbot.ru/pyscripts/bot.py');
+exec('~/anaconda/bin/python3 ~/domains/cometbot.ru/pyscript/bot.py');
