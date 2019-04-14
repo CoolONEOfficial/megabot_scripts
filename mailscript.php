@@ -31,7 +31,7 @@ foreach ($messages as $message) {
     DB::insert('messages', [
         'subject' => $message->getSubject(),
         'sender' => $message->getFrom()->getFullAddress(),
-        'body' => $message->getBodyText(),
+        'body' => $message->getBodyText() != null ? $message->getBodyText() : "",
         'timestamp' => $message->getDate()->getTimestamp(),
         'attachments' => json_encode(array_map(function (AttachmentInterface $i) use ($message) {
             $path_parts = pathinfo($i->getFilename());
@@ -51,4 +51,5 @@ foreach ($messages as $message) {
 
 $connection->expunge();
 
-exec('~/anaconda/bin/python ~/domains/cometbot.ru/pyscript/bot.py');
+exec('cd ~/domains/cometbot.ru/pyscript/');
+exec('~/anaconda3/bin/python ~/domains/cometbot.ru/pyscript/bot.py');
