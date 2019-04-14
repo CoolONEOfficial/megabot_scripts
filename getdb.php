@@ -14,7 +14,6 @@ DB::$dbName = 'a0231165_messages_data';
 DB::$encoding = 'utf8';
 
 header('Content-Type: application/json');
-echo 'start' . $argv[1] . 'end' . '\n';
 echo json_encode(DB::query(
     $_GET['query']
 )
