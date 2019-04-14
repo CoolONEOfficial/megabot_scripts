@@ -6,10 +6,13 @@
  * Time: 5:35
  */
 
-$file = "config.json";
+if($_SERVER['SERVER_ADDR'] == $_SERVER['HTTP_X_FORWARDED_FOR']) {
 
-$json = json_decode(file_get_contents($file),TRUE);
+    $file = "config.json";
 
-$json[$_GET['key']] = $_GET['value'];
+    $json = json_decode(file_get_contents($file), TRUE);
 
-file_put_contents($file, json_encode($json));
+    $json[$_GET['key']] = $_GET['value'];
+
+    file_put_contents($file, json_encode($json));
+}

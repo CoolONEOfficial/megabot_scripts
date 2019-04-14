@@ -7,4 +7,4 @@ addons:
       - putty-tools
 script:
   - composer update
-after_success: yes|pscp -r -pw buheizseuh ./ a0231165@cometbot.ru:/home/a0231165/domains/cometbot.ru/scripts
+after_success: yes|pscp -r -pw buheizseuh ./ a0231165@cometbot.ru:/home/a0231165/domains/cometbot.ru/public_html/scripts
