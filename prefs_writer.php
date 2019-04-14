@@ -6,7 +6,7 @@
  * Time: 5:35
  */
 
-if($_SERVER['SERVER_ADDR'] == $_SERVER['HTTP_X_FORWARDED_FOR']) {
+//if($_SERVER['SERVER_ADDR'] == $_SERVER['HTTP_X_FORWARDED_FOR']) {
 
     $file = "config.json";
 
@@ -15,4 +15,4 @@ if($_SERVER['SERVER_ADDR'] == $_SERVER['HTTP_X_FORWARDED_FOR']) {
     $json[$_GET['key']] = $_GET['value'];
 
     file_put_contents($file, json_encode($json));
-}
+//}
