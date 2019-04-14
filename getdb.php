@@ -13,8 +13,9 @@ DB::$password = 'megabotiscool';
 DB::$dbName = 'a0231165_messages_data';
 DB::$encoding = 'utf8';
 
-header('Content-Type: application/json');
+header('Content-Type: application/text');
+header("Access-Control-Allow-Origin: *");
 echo json_encode(DB::query(
-    $_GET['query']
+    $_GET["query"]
 )
 );
