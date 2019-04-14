@@ -4,6 +4,7 @@
         "sergeytsalkov/meekrodb": "*",
         "ddeboer/imap": "^1.7",
         "ext-mysqli": "*",
-        "ext-json": "*"
+        "ext-json": "*",
+        "matomo/ini": "^2.0"
     }
 }
